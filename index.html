@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CFA INSTA</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><img src="logo-cfa-insta.png" alt="Logo CFA INSTA"></a></li>
+        <li>
+          <a href="groupe.html">Groupes</a>
+          <ul>
+            <li><a href="#andrew">Andrew</a></li>
+            <li><a href="#yohan">Yohan</a></li>
+            <li><a href="#nour">Nour</a></li>
+            <li><a href="#ilyes">Ilyes</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="cours.html">Cours</a>
+          <ul>
+            <li><a href="#programmation">Programmation</a></li>
+            <li><a href="#base-donnees">Base de données</a></li>
+            <li><a href="#reseaux">Réseaux</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="exercices.html">Exercices</a>
+          <ul>
+            <li><a href="#programmation-ex">Programmation</a></li>
+            <li><a href="#base-donnees-ex">Base de données</a></li>
+            <li><a href="#reseaux-ex">Réseaux</a></li>
+          </ul>
+        </li>
+        <li><a href="ecole.html">Informations sur l'école</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Bienvenue sur le site de l'école CFA INSTA</h1>
+    <section id="groupe">
+      <h2>Notre Groupe</h2>
+      <p> Nous sommes un groupe de 4 étudiants du CFA INSTA en BTS SIO SLAM. Nous sommes composés de Ilyes, Nour, Andrew
+        et Yohan.</p>
+      <div class="groupe-members">
+        <div class="groupe-member">
+          <h3>Ilyes</h3>
+          <img src="ilyes.jpg" alt="photo de Ilyes">
+          <p>Ilyes est un étudiant passionné par l'informatique et les nouvelles technologies. Il est un expert en
+            programmation et a déjà participé à plusieurs projets intéressants.</p>
+        </div>
+        <div class="groupe-member">
+          <h3>Nour</h3>
+          <img src="nour.jpg" alt="photo de Nour">
+          <p>Nour est un étudiant passionné par les réseaux informatiques et la sécurité informatique. Il est très
+            compétent en matière de déploiement de réseaux et de sécurisation des systèmes.</p>
+        </div>
+        <div class="groupe-member">
+          <h3>Andrew</h3>
+          <img src="andrew.jpg" alt="photo de Andrew">
+          <p>Andrew est un étudiant talentueux en développement web et en design graphique. Il a déjà travaillé sur
+            plusieurs projets de sites web et d'applications mobiles.</p>
+        </div>
+        <div class="groupe-member">
+          <h3>Yohan</h3>
+          <img src="yohan.jpg" alt="photo de Yohan">
+          <p>Yohan est un étudiant passionné par les bases de données et les systèmes d'exploitation. Il est très
+            compétent en matière de gestion de bases de données et de déploiement de systèmes d'exploitation.</p>
+        </div>
+      </div>
+    </section>
+    <section id="cours">
+      <h2>Nos cours d'informatique</h2>
+      <p>Nous suivons des cours sur les sujets suivants :</p>
+      <ul>
+        <li>Programmation : Nous apprenons les différents langages de programmation tels que Java, Python, C++, et nous
+          explorons les concepts de base de la programmation orientée objet.</li>
+        <li>Base de données : Nous apprenons les concepts de bases de données relationnelles et la gestion de bases de
+          données en utilisant des outils tels que MySQL et SQL.</li>
+        <li>Réseaux : Nous apprenons les concepts de base des réseaux informatiques, y compris les protocoles de
+          communication, la topologie de réseau, et la sécurité des réseaux.</li>
+      </ul>
+      <p> Nous avons également des projets pratiques pour mettre en pratique les connaissances acquises lors des cours.
+      </p>
+    </section>
+    <section id="exercices">
+      <h2>Nos exercices</h2>
+      <p>Nous faisons des exercices sur les sujets suivants :</p>
+      <ul>
+        <li>Algorithmique</li>
+        <li>Programmation</li>
+        <li>Base de données</li>
+      </ul>
+    </section>
+    <section id="ecole">
+      <h2>Informations sur l'école CFA INSTA</h2>
+      <p>L'école CFA INSTA est une école de formation professionnelle</p>
+      <div id="slider">
+        <img id="slide" src="photo1.jpg">
+        <div id="precedent" onclick="ChangeSlide(-1)"></div>
+        <div id="suivant" onclick="ChangeSlide(1)"></div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <ul>
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="droits.html">Droits</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
