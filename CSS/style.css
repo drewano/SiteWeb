@@ -185,4 +185,86 @@ section {
     /* Autres styles pour les appareils mobiles */
   }
   
-  
+  /* Utilisation de variables pour les couleurs et les dimensions communes */
+:root {
+    --primary-color: #3f51b5;
+    --secondary-color: #0077be;
+    --tertiary-color: #00b3ff;
+    --text-color: #333;
+    --background-color: #f1f1f1;
+    --padding: 1rem;
+    --margin: 3rem;
+    --radius: 10px;
+}
+
+/* Utilisation de flexbox pour la mise en page */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utilisation de @media pour les styles en fonction de la taille de l'écran */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    section {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+/* Utilisation de Grid Layout pour la mise en page à partir de 992px */
+@media (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+/* Utilisation de media query pour adapter le style en fonction de la résolution de l'écran */
+@media (min-resolution: 300dpi) {
+    header nav ul li img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Utilisation de @supports pour les styles spécifiques */
+@supports (display: grid) {
+    .groupe-members {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+/* Utilisation de sélecteurs de @keyframes pour les animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Utilisation de sélecteurs de @font-face pour les polices personnalisées */
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-Regular.ttf")
+}
+
+/* Utilisation de sélecteurs de @import pour les feuilles de style externes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
